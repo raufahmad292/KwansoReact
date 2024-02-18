@@ -3,6 +3,8 @@
 
 First Install Node Version 18.16.0
 
+Add the Google Map Api Key which I send you by email in /src/googlemapapikey.ts file  in given variable GOOGLE_MAPS_API_KEY else google map will not show.
+
 Then In the project directory, you can run:
 
 Run  `npm i --force`
