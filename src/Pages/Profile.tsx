@@ -4,7 +4,7 @@ import CountryFlag from 'react-country-flag';
 import { GoogleMap, useLoadScript,  } from '@react-google-maps/api'
 import {MarkerF} from '@react-google-maps/api'
 import { useState } from 'react';
-
+import {GOOGLE_MAPS_API_KEY} from '../googlemapsapikey'
 const Profile = () => {
   const [showMap, setShowMap]                   =   useState<boolean>(false);
   const [showDetailsPopup, setShowDetailsPopup] =   useState<boolean>(false);
@@ -39,7 +39,7 @@ const Profile = () => {
     setShowDetailsPopup(!showDetailsPopup);
   };
    const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyAOi1PItVbKfyLEAeNaE3gV-U2marH8dQE',
+    googleMapsApiKey: GOOGLE_MAPS_API_KEY,
   });
 
   if (loadError) {
